@@ -1,0 +1,56 @@
+.container {
+    width: 75%;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    position: relative;
+    padding-left: 5%;
+}
+.containerCoins {
+    height: 90vh;
+    width: 90%;
+    overflow-y: scroll;
+    border: 1px solid gray;
+}
+.containerCoins::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.containerCoins::-webkit-scrollbar:vertical {
+    width:10px;
+}
+.containerCoins::-webkit-scrollbar-thumb {
+    background-color: #a7a7a7;
+    border-radius: 20px;
+    border: 1px solid #c8cacc;
+}
+
+.containerCoins2 {
+/*     display: flex;
+    flex-direction: row; */
+}
+.containerOneCoin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.titleCoin {
+
+}
+.title {
+    font-weight: 100;
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+    color: #797979;
+}
+.subtitle {
+    font-weight: 100;
+    background-color: rgb(0, 0, 0);
+    color: rgb(211, 211, 211);
+    padding: .9rem 1.5rem 0 1.5rem;
+    border-radius: .9rem .9rem 0 0 ;
+    margin: 0;
+    position: relative;
+}
