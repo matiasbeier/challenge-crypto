@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler)
 
-function Graphic({dataState}) {
+function Graphic({dataState, colorArea, colorLine}) {
 
     const options = {
         responsive: false,
@@ -31,10 +31,10 @@ function Graphic({dataState}) {
         datasets: [
           {
             data: last3000,
-            borderColor: "blue",
+            borderColor: colorLine,
             pointRadius: 1,
             fill: true, 
-            background: "linearGradient(176deg, rgba(47,144,221,1) 0%, rgba(245,248,249,1) 45%)"
+            backgroundColor: colorArea
         }
     ],
       };

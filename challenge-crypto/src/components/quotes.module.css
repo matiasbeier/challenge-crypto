@@ -13,6 +13,7 @@
     width: 90%;
     overflow-y: scroll;
     border: 1px solid gray;
+    position: relative;
 }
 .containerCoins::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -34,9 +35,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .titleCoin {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .title {
     font-weight: 100;
@@ -53,4 +57,27 @@
     border-radius: .9rem .9rem 0 0 ;
     margin: 0;
     position: relative;
+}
+.input {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 85%;
+    height: 1.75rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    border: 2px solid gray;
+    border-radius: .25rem;
+}
+.button {
+    position: absolute;
+    right: 2.9rem;
+    top: 3.3rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+.monedas {
+    display: flex;
+    justify-content: flex-start;
 }
